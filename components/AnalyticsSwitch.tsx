@@ -3,6 +3,9 @@ import Cookies from 'js-cookie';
 import Script from "next/script";
 import { useEffect, useState } from 'react';
 
+// Declaring a global variable
+declare var _: any;
+
 export function AnalyticsSwitch() {
   const [loaded, setLoaded] = useState(null);
   useEffect(() => {
