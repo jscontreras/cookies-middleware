@@ -10,6 +10,7 @@ export function AnalyticsSwitch() {
     setLoaded(someCookie);
   })
   // https://www.analyticsmania.com/post/how-to-install-google-tag-manager/#:~:text=The%20most%20recommended%20way%20how,after%20tag).
+  // https://support.google.com/analytics/answer/1008080?hl=en#zippy=%2Cin-this-article%2Cdynamic-website
   if (loaded) {
     return <>
       <Script
