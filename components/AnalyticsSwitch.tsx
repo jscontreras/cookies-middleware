@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react';
 // Declaring a global variable
 declare var _: any;
 
+
 export function AnalyticsSwitch() {
   const [loaded, setLoaded] = useState(null);
   useEffect(() => {
@@ -17,7 +18,7 @@ export function AnalyticsSwitch() {
   if (loaded) {
     return <>
       <Script
-        src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js"
+        src={`https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js?${new Date().getMilliseconds()}`}
         onLoad={() => {
           console.log(_.sample([1, 2, 3, 4]))
         }}
