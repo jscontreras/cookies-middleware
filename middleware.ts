@@ -2,6 +2,7 @@ import { NextResponse } from 'next/server'
 import type { NextRequest } from 'next/server'
 
 export function middleware(request: NextRequest) {
+  console.log('request.cookies', request.cookies.getAll())
   const response = NextResponse.next();
   const url = request.nextUrl;
   const ga_platform = url.searchParams.get('ga_platform') || 'desktop';
