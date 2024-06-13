@@ -23,7 +23,7 @@ export function AnalyticsSwitch() {
           console.log(_.sample([1, 2, 3, 4]))
         }}
       />
-      <p>{`Client Component ${loaded}`}</p>
+      <p>{`Device Cookie (Read From Client): ${loaded}`}</p>
     </>
   }
   else {
