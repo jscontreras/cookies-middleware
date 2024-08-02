@@ -11,7 +11,8 @@ export async function GET(request: NextRequest) {
   delete headers['x-vercel-proxy-signature'];
   return NextResponse.json({
     now: Date.now(),
-    origin: 'https://cookies-middleware.vercel.app/',
     headers: headers,
   });
 }
+
+export const dynamic = 'force-dynamic';
