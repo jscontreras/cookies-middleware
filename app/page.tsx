@@ -6,7 +6,7 @@ export default function Home() {
   const cookieStorage = cookies();
   const device = cookieStorage.get('device') || { value:'Non-Detected'};
   return<>
-    <h1>Hello World (M)</h1>
+    <h1>Hello World!</h1>
     <p>Device Cookie (Read From Server): {`${device?.value}`}</p>
   </>;
 }
